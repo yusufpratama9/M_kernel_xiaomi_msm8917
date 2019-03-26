@@ -22,7 +22,7 @@
 		      <286 0x10000>, <283 0x10000>, <359 0x10000>;
 	interrupt-parent = <&intc>;
 
-	reserved-memory {
+	reserved_mem: reserved-memory {
 		#address-cells = <1>;
 		#size-cells = <1>;
 		ranges;
@@ -1514,6 +1514,8 @@
 		qcom,pm-qos-irq-type = "affine_cores";
 		qcom,pm-qos-irq-cpu = <0>;
 		qcom,pm-qos-irq-latency = <70>;
+
+		qcom,sdr104-wa;
 
 		status = "disabled";
 	};
